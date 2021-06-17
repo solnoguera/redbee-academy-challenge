@@ -1,6 +1,6 @@
 package com.redbee.academy.challenge;
 
-import java.util.List;
+import java.util.*;
 
 public class SumArrayNumbers {
 
@@ -12,7 +12,12 @@ public class SumArrayNumbers {
    * @return The result of 1 + 2 + 3
    */
   public static Integer sum(List<Integer> array) {
-    //TODO: Implement me
-    return null;
+    ListIterator<Integer> iterador = array.listIterator();
+    int total=0;
+    while(iterador.hasNext()) {
+    	total += iterador.next();
+    }
+    return total;
+    
   }
 }

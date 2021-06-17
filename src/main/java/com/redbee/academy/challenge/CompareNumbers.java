@@ -12,7 +12,9 @@ public class CompareNumbers {
    * @return The max of a, b and c
    */
   public static Integer max(Integer a, Integer b, Integer c) {
-    //TODO: Implement me
-    return null;
+    int max;
+	if(a>b) max=a; else max=b;
+	if(c>max) max=c;
+    return max;
   }
 }
